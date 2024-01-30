@@ -1,0 +1,38 @@
+[
+	{
+		"id": 1,
+		"name": "Carrot Cake Familiar",
+		"price": 9000,
+		"image": "../Assets/Img/carrotCakeCarousel.jpg"
+	},
+	{
+		"id": 2,
+		"name": "Carrot Cake Familiar",
+		"price": 9000,
+		"image": "../Assets/Img/trufasCarousel.jpeg"
+	},
+	{
+		"id": 3,
+		"name": "Carrot Cake Familiar",
+		"price": 9000,
+		"image": "../Assets/Img/carrotCakeCarousel.jpg"
+	},
+	{
+		"id": 4,
+		"name": "Carrot Cake Familiar",
+		"price": 9000,
+		"image": "../Assets/Img/carrotCakeCarousel.jpg"
+	},
+	{
+		"id": 5,
+		"name": "Carrot Cake Familiar",
+		"price": 9000,
+		"image": "../Assets/Img/carrotCakeCarousel.jpg"
+	},
+	{
+		"id": 6,
+		"name": "Carrot Cake Familiar",
+		"price": 9000,
+		"image": "../Assets/Img/carrotCakeCarousel.jpg"
+	}
+]
