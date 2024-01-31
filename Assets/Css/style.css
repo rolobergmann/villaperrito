@@ -1,9 +1,38 @@
+@media only screen and (min-width: 1224px) {
+	.carousel-control-prev-icon,
+	.carousel .carousel-control .icon-next,
+	.carousel .carousel-control .glyphicon-chevron-left,
+	.carousel .carousel-control .glyphicon-chevron-right {
+		font-size: 24px;
+		line-height: 24px;
+		margin-top: -35px;
+	}
+}
+
 body {
 	font-family: "open sans" sans-serif;
+}
+
+.navbar {
+	font-size: large;
+}
+
+.nav-link:visited,
+.nav-link:link {
+	border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link:active {
+	border-bottom: 2px solid #1bcfc6;
 }
 .navbar-expand-lg,
 #offcanvasNavbar {
 	background-color: #e83e8c !important;
+}
+
+.btn-close-offcanvas {
+	padding-bottom: 5rem;
 }
 
 h1 {
@@ -12,7 +41,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2.8rem;
+	font-size: 40px;
 }
 
 h5 {

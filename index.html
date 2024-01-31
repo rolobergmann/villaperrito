@@ -54,16 +54,25 @@
 					<span class="navbar-toggler-icon"></span>
 				</button>
 				<div
-					class="collapse navbar-collapse offcanvas offcanvas-start w-25 p-3"
+					class="collapse navbar-collapse offcanvas offcanvas-start w-50"
 					tabindex="-1"
 					id="offcanvasNavbar"
 					aria-labelledby="offcanvasNavbarLabel"
-					id="navbarSupportedContent">
+					id="navbarSupportedContent"
+					data-bs-scroll="true"
+					data-bs-backdrop="true">
 					<div class="offcanvas-header">
 						<button
 							type="button"
-							class="btn-close"
+							class="btn-close btn-close-offcanvas"
 							data-bs-dismiss="offcanvas"></button>
+						<a
+							class="navbar-brand"
+							href="#"
+							><img
+								src="./Assets/Img/logoperriro.jpg"
+								class="logo_nav" />
+						</a>
 					</div>
 					<ul class="navbar-nav ms-auto offcanvas-body">
 						<li class="nav-item">
@@ -101,15 +110,15 @@
 		<!-- end nav bar-->
 		<main>
 			<!--Carousel-->
-			<section class="carousel container-fluid p-5">
-				<div class="row">
-					<div class="col-5">
-						<h2>
+			<section class="carousel">
+				<div class="container-fluid p-5 row">
+					<div class="col-sm-5 d-flex text-wrap">
+						<p class="display-5 text-justify">
 							Venta y distribución de frutos secos, legumbres, semillas y
 							productos veganos caseros
-						</h2>
+						</p>
 					</div>
-					<div class="col-7">
+					<div class="col-sm-7">
 						<div
 							id="carouselExampleCaptions"
 							class="carousel slide">
@@ -258,15 +267,16 @@
 		<!--End Medios de pago-->
 
 		<!--Footer-->
-		<footer class="bg-aquamarine d-none d-sm-none d-md-block">
-			<div class="container d-flex align-items-center p-5">
-				<div class="col-5"></div>
-				<div class="col-7 d-flex space-content-between">
+		<footer class="bg-aquamarine">
+			<div class="container-fluid row p-2">
+				<div class="col-2"></div>
+				<div class="col-8 d-flex justify-content-center">
 					<h2>Siguenos</h2>
 					<a href="https://www.instagram.com/villa_perrito/ "
 						><i class="fa-brands fa-instagram"></i
 					></a>
 				</div>
+				<div class="col-2"></div>
 			</div>
 		</footer>
 		<!--End Footer-->
