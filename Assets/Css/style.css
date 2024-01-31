@@ -1,8 +1,8 @@
 body {
 	font-family: "open sans" sans-serif;
 }
-
-.navbar-expand-lg {
+.navbar-expand-lg,
+#offcanvasNavbar {
 	background-color: #e83e8c !important;
 }
 
