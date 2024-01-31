@@ -97,7 +97,8 @@ body.showCart .cartTab {
 	inset: 0 0 0 auto;
 }
 
-body.showCart .container {
+body.showCart .container,
+body.showCart .container-fluid {
 	transform: translateX(-250px);
 }
 .cartTab h1 {
