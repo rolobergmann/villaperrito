@@ -1,20 +1,12 @@
-@media only screen and (min-width: 1224px) {
-	.carousel-control-prev-icon,
-	.carousel .carousel-control .icon-next,
-	.carousel .carousel-control .glyphicon-chevron-left,
-	.carousel .carousel-control .glyphicon-chevron-right {
-		font-size: 24px;
-		line-height: 24px;
-		margin-top: -35px;
-	}
-}
-
 body {
 	font-family: "open sans" sans-serif;
 }
 
 .navbar {
 	font-size: large;
+}
+.navbar .navbar-brand:hover {
+	transform: translateY(-5px);
 }
 
 .nav-link:visited,
@@ -25,6 +17,7 @@ body {
 .nav-link:hover,
 .nav-link:active {
 	border-bottom: 2px solid #1bcfc6;
+	transform: translateY(-5px);
 }
 .navbar-expand-lg,
 #offcanvasNavbar {
@@ -56,6 +49,9 @@ h5 {
 .card-body a {
 	text-decoration: none;
 	font-size: 12px;
+}
+.card-img-top:hover {
+	transform: scale(1.02);
 }
 
 .logo_nav {
@@ -126,9 +122,9 @@ body.showCart .cartTab {
 	inset: 0 0 0 auto;
 }
 
-body.showCart .container,
-body.showCart .container-fluid {
+body.showCart .cart-push {
 	transform: translateX(-250px);
+	opacity: 30%;
 }
 .cartTab h1 {
 	padding: 15px;
