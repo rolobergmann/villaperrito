@@ -228,3 +228,57 @@ body.showCart .cart-push {
 #products-title {
 	transform: translateY(-40px);
 }
+
+#backToTop {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 10px; /* Place the button at the bottom of the page */
+	right: 10px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: #17a2b8; /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 10px; /* Rounded corners */
+	font-size: 18px; /* Increase font size */
+	animation-name: back;
+	animation-duration: 4s;
+	animation-timing-function: linear;
+}
+
+#backToTop:hover {
+	background-color: #555; /* Add a dark-grey background on hover */
+}
+
+@keyframes back {
+	0% {
+		transform: translateY(5px);
+	}
+	25% {
+		transform: translateY(10px);
+	}
+	50% {
+		transform: translateY(10px);
+	}
+	75% {
+		transform: translateY(-15px);
+	}
+	100% {
+		transform: translateY(-5px);
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.listProduct {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+	.listProduct {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
