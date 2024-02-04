@@ -2,10 +2,12 @@ let listProductHTML = document.querySelector(".listProduct");
 let listCartHTML = document.querySelector(".listCart");
 let iconCart = document.querySelector(".icon-cart");
 let iconCartSpan = document.querySelector(".icon-cart span");
+let totalPricetHTML = document.querySelector(".totalPrice");
 let body = document.querySelector("body");
 let closeCart = document.querySelector(".close");
 let products = [];
 let cart = [];
+let checkOutPrice = 0;
 
 iconCart.addEventListener("click", () => {
 	body.classList.toggle("showCart");
@@ -67,15 +69,17 @@ listProductHTML.addEventListener("click", (event) => {
 	}
 });
 
-const sendCart = (listCart) => {
-	console.log(listCart);
+const sendCart = () => {
+	let cartl = cart.length;
+	console.log(cart);
+	console.log(cartl);
 	if (cart.length === 0) {
 		alert("Carro vacio");
 	} else {
-		(window.location =
-			"https://wa.me/56996330572?text=hola, estas comprando lo siguiente:" +
-			cart),
-			"_blank";
+		let cartJson = JSON.stringify(cart);
+		let wa =
+			"https://wa.me/56996330572?text=hola, estas comprando lo siguiente:";
+		(window.location = wa + cartJson), "_blank";
 	}
 };
 
@@ -111,6 +115,7 @@ const addCartToHTML = () => {
 	listCartHTML.innerHTML = "";
 	let totalQuantity = 0;
 	if (cart.length > 0) {
+		let checkOutPrice = 0;
 		cart.forEach((item) => {
 			totalQuantity = totalQuantity + item.quantity;
 			let newItem = document.createElement("div");
@@ -136,7 +141,11 @@ const addCartToHTML = () => {
                     <span class="plus">></span>
                 </div>
             `;
+			console.log(checkOutPrice);
+			checkOutPrice = checkOutPrice + info.price * item.quantity;
+			console.log(checkOutPrice);
 		});
+		totalPricetHTML.innerText = checkOutPrice;
 	}
 	iconCartSpan.innerText = totalQuantity;
 };
@@ -179,7 +188,14 @@ const changeQuantityCart = (product_id, type) => {
 		}
 	}
 	addCartToHTML();
+	checkCartEmpty();
 	addCartToMemory();
+};
+
+const checkCartEmpty = () => {
+	if (cart.length === 0) {
+		totalPricetHTML.innerText = checkOutPrice;
+	}
 };
 
 const initApp = () => {
