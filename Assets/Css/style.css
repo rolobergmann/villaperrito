@@ -32,6 +32,11 @@ html {
 .navbar-expand-lg {
 	background-color: transparent !important;
 }
+@media only screen and (max-width: 800px) {
+	.logo_nav {
+		max-width: 50px;
+	}
+}
 #offcanvasNavbar {
 	background-color: #17a2b8;
 }
@@ -205,15 +210,11 @@ body.showCart .cart-push {
 .carousel-inner img {
 	margin: auto;
 }
-.carousel .carousel-item {
-	height: 750px;
-}
-.carousel-item img {
-	position: absolute;
-	object-fit: cover;
-	top: 0;
-	left: 0;
-	min-height: 750px;
+
+@media screen and (max-height: 800px) {
+	.carousel .carousel-inner .carousel-captions {
+		height: 24rem !important;
+	}
 }
 .feature-icon {
 	background-color: #17a2b8;
@@ -225,6 +226,12 @@ body.showCart .cart-push {
 	top: 0;
 	height: 300px;
 }
+
+/* @media only screen and (max-width: 800px) {
+	#feature {
+		max-height: 300px;
+	}
+} */
 #products-title {
 	transform: translateY(-40px);
 }
