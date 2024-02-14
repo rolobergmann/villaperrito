@@ -3,36 +3,42 @@
 		"id": 1,
 		"name": "Carrot Cake Familiar",
 		"price": 9000,
-		"image": "../Assets/Img/carrotCakeCarousel.jpg"
+		"image": "../Assets/Img/carrotCakeCarousel.jpg",
+		"tipo": "dulce"
 	},
 	{
 		"id": 2,
 		"name": "Trufas",
 		"price": 4500,
-		"image": "../Assets/Img/trufasCarousel.jpeg"
+		"image": "../Assets/Img/trufasCarousel.jpeg",
+		"tipo": "legumbre"
 	},
 	{
 		"id": 3,
 		"name": "Carrot Cake Familiar",
 		"price": 9000,
-		"image": "../Assets/Img/carrotCakeCarousel.jpg"
+		"image": "../Assets/Img/carrotCakeCarousel.jpg",
+		"tipo": "dulce"
 	},
 	{
 		"id": 4,
-		"name": "Carrot Cake Familiar",
+		"name": "Lentejas Rojas",
 		"price": 9000,
-		"image": "../Assets/Img/carrotCakeCarousel.jpg"
+		"image": "../Assets/Img/carrotCakeCarousel.jpg",
+		"tipo": "legumbre"
 	},
 	{
 		"id": 5,
 		"name": "Carrot Cake Familiar",
 		"price": 9000,
-		"image": "../Assets/Img/carrotCakeCarousel.jpg"
+		"image": "../Assets/Img/carrotCakeCarousel.jpg",
+		"tipo": "harina"
 	},
 	{
 		"id": 6,
 		"name": "Carrot Cake Familiar",
 		"price": 9000,
-		"image": "../Assets/Img/carrotCakeCarousel.jpg"
+		"image": "../Assets/Img/carrotCakeCarousel.jpg",
+		"tipo": "dulce"
 	}
 ]

@@ -215,9 +215,124 @@
 			<!-- End Section h1 -->
 
 			<!-- Cards section-->
-			<div class="container cart-push pt-0">
-				<div class="row listProduct"></div>
+			<div class="container mt-5">
+				<input
+					type="text"
+					id="searchInput"
+					class="form-control mb-3"
+					placeholder="Search" />
+
+				<div
+					class="row"
+					id="cardContainer">
+					<!-- Bootstrap cards will be dynamically added here -->
+				</div>
 			</div>
+
+			<script>
+				document.addEventListener("DOMContentLoaded", function () {
+					const searchInput = document.getElementById("searchInput");
+					const cardContainer = document.getElementById("cardContainer");
+
+					const cards = [
+						{
+							id: 1,
+							name: "Carrot Cake Familiar",
+							price: 9000,
+							image: "../Assets/Img/carrotCakeCarousel.jpg",
+							tipo: "dulce",
+						},
+						{
+							id: 2,
+							name: "Trufas",
+							price: 4500,
+							image: "../Assets/Img/trufasCarousel.jpeg",
+							tipo: "legumbre",
+						},
+						{
+							id: 3,
+							name: "Carrot Cake Familiar",
+							price: 9000,
+							image: "../Assets/Img/carrotCakeCarousel.jpg",
+							tipo: "dulce",
+						},
+						{
+							id: 4,
+							name: "Lentejas Rojas",
+							price: 9000,
+							image: "../Assets/Img/carrotCakeCarousel.jpg",
+							tipo: "legumbre",
+						},
+						{
+							id: 5,
+							name: "Carrot Cake Familiar",
+							price: 9000,
+							image: "../Assets/Img/carrotCakeCarousel.jpg",
+							tipo: "harina",
+						},
+						{
+							id: 6,
+							name: "Carrot Cake Familiar",
+							price: 9000,
+							image: "../Assets/Img/carrotCakeCarousel.jpg",
+							tipo: "dulce",
+						},
+						// Add more cards as needed
+					];
+
+					// Function to generate HTML for a card
+					function generateCardHTML(card) {
+						return `
+						<div
+				class="card producto ${product.tipo}"
+				style="width: 18rem">
+				<img
+					src="${product.image}"
+					class="card-img-top"
+					alt="..." />
+				<div class="card-body">
+					<h5 class="card-title">${product.name}</h5>
+					<p class="card-text">
+						Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+						accusantium doloremque laudantium, totam rem aperiam, eaque
+						ipsa quae ab illo inventore veritatis et quasi architecto
+						beatae vitae dicta sunt explicabo..
+					</p>
+				</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item price">$${product.price}</li>
+				</ul>
+				<div class="card-body">
+					<button class="addCart">Agregar al carro</button>
+				</div>
+			
+		</div>
+					`;
+					}
+
+					// Function to render cards
+					function renderCards(cardsArray) {
+						cardContainer.innerHTML = "";
+						cardsArray.forEach((card) => {
+							cardContainer.innerHTML += generateCardHTML(card);
+						});
+					}
+
+					// Initial rendering of cards
+					renderCards(cards);
+
+					// Event listener for search input
+					searchInput.addEventListener("input", function () {
+						const searchText = this.value.trim().toLowerCase();
+						const filteredCards = cards.filter(
+							(card) =>
+								card.title.toLowerCase().includes(searchText) ||
+								card.description.toLowerCase().includes(searchText)
+						);
+						renderCards(filteredCards);
+					});
+				});
+			</script>
 
 			<!--End cards section-->
 

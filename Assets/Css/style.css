@@ -130,7 +130,7 @@ footer {
 	cursor: pointer;
 }
 .cartTab {
-	width: 300px;
+	width: 400px;
 	background-color: white;
 	color: #1bcfc6;
 	position: fixed;
@@ -213,9 +213,9 @@ body.showCart .cart-push {
 #carousel {
 	position: relative;
 	width: 100%;
-	transform: translateY(-140px);
+	/* transform: translateY(-140px); */
 }
-.carousel-inner img {
+section .home .carousel-inner img {
 	margin: auto;
 }
 

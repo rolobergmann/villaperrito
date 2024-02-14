@@ -1,13 +1,37 @@
 let listProductHTML = document.querySelector(".listProduct");
 let listCartHTML = document.querySelector(".listCart");
 let iconCart = document.querySelector(".icon-cart");
-let iconCartSpan = document.querySelector(".icon-cart span");
-let totalPricetHTML = document.querySelector(".totalPrice");
-let body = document.querySelector("body");
-let closeCart = document.querySelector(".close");
+let iconCartSpan = document.querySelector("#cart_items");
+let totalPriceHTML = document.querySelector(".totalPrice");
+const body = document.querySelector("body");
+let closeCart = document.querySelector(".closeCart");
 let products = [];
 let cart = [];
 let checkOutPrice = 0;
+
+let sidebar = body.querySelector("nav"),
+	toggleSidebar = body.querySelector(".toggle-sidebar"),
+	Cart = body.querySelector(".toggleCart"),
+	searchBtn = body.querySelector(".search-box"),
+	modeSwitch = body.querySelector(".toggle-switch"),
+	modeText = body.querySelector(".mode-text");
+
+toggleSidebar.addEventListener("click", () => {
+	sidebar.classList.toggle("close");
+});
+searchBtn.addEventListener("click", () => {
+	sidebar.classList.remove("close");
+});
+
+modeSwitch.addEventListener("click", () => {
+	body.classList.toggle("dark");
+
+	if (body.classList.contains("dark")) {
+		modeText.innerText = "Light mode";
+	} else {
+		modeText.innerText = "Dark mode";
+	}
+});
 
 iconCart.addEventListener("click", () => {
 	body.classList.toggle("showCart");
@@ -23,17 +47,11 @@ const addDataToHTML = () => {
 			let newProduct = document.createElement("div");
 			newProduct.dataset.id = product.id;
 			newProduct.classList.add("item");
-			newProduct.classList.add("col-sm-12");
-			newProduct.classList.add("col-md-4");
-			newProduct.classList.add("justify-content-center");
-			newProduct.classList.add("mb-5");
-			newProduct.classList.add("d-flex");
-			newProduct.dataset.id = product.id;
-
+			/* 			newProduct.classList.add("card-style"); */
 			newProduct.innerHTML = `
 			<div
-				class="card"
-				style="width: 18rem">
+				class="card producto col-4 ${product.tipo}"
+				style="width: 10rem">
 				<img
 					src="${product.image}"
 					class="card-img-top"
@@ -54,17 +72,16 @@ const addDataToHTML = () => {
 					<button class="addCart">Agregar al carro</button>
 				</div>
 			
-		</div>`;
+			</div>`;
 			listProductHTML.appendChild(newProduct);
 		});
 	}
 };
 
 listProductHTML.addEventListener("click", (event) => {
-	let positionClick = event.target;
-	if (positionClick.classList.contains("addCart")) {
-		let product_id =
-			positionClick.parentElement.parentElement.parentElement.dataset.id;
+	let positionClick = event.target.closest(".addCart");
+	if (positionClick) {
+		let product_id = positionClick.closest(".item").dataset.id;
 		addToCart(product_id);
 	}
 });
@@ -145,7 +162,7 @@ const addCartToHTML = () => {
 			checkOutPrice = checkOutPrice + info.price * item.quantity;
 			console.log(checkOutPrice);
 		});
-		totalPricetHTML.innerText = checkOutPrice;
+		totalPriceHTML.innerText = checkOutPrice;
 	}
 	iconCartSpan.innerText = totalQuantity;
 };
@@ -194,7 +211,27 @@ const changeQuantityCart = (product_id, type) => {
 
 const checkCartEmpty = () => {
 	if (cart.length === 0) {
-		totalPricetHTML.innerText = checkOutPrice;
+		totalPriceHTML.innerText = checkOutPrice;
+	}
+};
+
+const filter = (filter) => {
+	const cards = document.getElementsByClassName("listProduct");
+	for (let i = 0; i < cards.length; i++) {
+		let title = cards[i].querySelector(".card .card-body .card-title");
+		if (title.innerText.indexOf(filter) > -1) {
+			cards[i].classList.remove("d-none");
+		} else {
+			cards[i].classList.add("d-none");
+		}
+	}
+};
+
+const clearAll = () => {
+	const cards = document.getElementsByClassName("listProduct"); // Added const keyword
+	for (let i = 0; i < cards.length; i++) {
+		// Added let keyword
+		cards[i].classList.remove("d-none");
 	}
 };
 
