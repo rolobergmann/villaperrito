@@ -3,13 +3,12 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta
+			http-equiv="X-UA-Compatible"
+			content="IE=edge" />
+		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1.0" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-			crossorigin="anonymous" />
+
 		<link
 			rel="shortcut icon"
 			href="./Assets/Img/favicon.png"
@@ -18,10 +17,6 @@
 			rel="apple-touch-icon"
 			sizes="128x128"
 			href="./Assets/Img/logoperriro.jpg" />
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-			crossorigin="anonymous"></script>
 		<link
 			rel="preconnect"
 			href="https://fonts.googleapis.com" />
@@ -30,306 +25,226 @@
 			href="https://fonts.gstatic.com"
 			crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap"
-			rel="stylesheet" />
-		<script
-			src="https://kit.fontawesome.com/4295f41cac.js"
-			crossorigin="anonymous"></script>
-		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
 			rel="stylesheet"
-			href="./Assets/Css/style.css" />
-		<title>Tienda Villa Perrito</title>
-	</head>
-
-	<body>
-		<!-- nav bar-->
-		<nav class="container cart-push navbar-expand-md navbar-dark p-2">
-			<div class="container d-flex justify-content-evenly">
-				<a
-					class="navbar-brand"
-					href="#"
-					><img
-						src="./Assets/Img/logoperriro.jpg"
-						class="logo_nav" />
-				</a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-bs-toggle="offcanvas"
-					data-bs-target="#offcanvasNavbar"
-					aria-controls="offcanvasNavbar"
-					aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
-				<div
-					class="collapse navbar-collapse offcanvas offcanvas-start w-50"
-					tabindex="-1"
-					id="offcanvasNavbar"
-					aria-labelledby="offcanvasNavbarLabel"
-					id="navbarSupportedContent"
-					data-bs-scroll="true"
-					data-bs-backdrop="true">
-					<div class="offcanvas-header">
-						<button
-							type="button"
-							class="btn-close btn-close-offcanvas"
-							data-bs-dismiss="offcanvas"></button>
-						<a
-							class="navbar-brand"
-							href="#"
-							><img
-								src="./Assets/Img/logoperriro.jpg"
-								class="logo_nav" />
-						</a>
-					</div>
-					<ul class="navbar-nav ms-auto offcanvas-body">
-						<li class="nav-item">
-							<a
-								class="nav-link active"
-								aria-current="page"
-								href="#"
-								>Inicio</a
-							>
-						</li>
-						<li class="nav-item">
-							<a
-								class="nav-link"
-								aria-current="page"
-								href="#productos"
-								>Productos</a
-							>
-						</li>
-						<li class="nav-item">
-							<a
-								class="nav-link"
-								aria-current="page"
-								href="#contacto"
-								>Contacto</a
-							>
-						</li>
-					</ul>
-				</div>
-				<div class="icon-cart">
-					<i class="fa-solid fa-cart-shopping col-md-push-4"></i>
-					<span>0</span>
-				</div>
-			</div>
-		</nav>
-		<!-- end nav bar-->
-
-		<!--Carousel-->
-		<div
-			class="carousel slide cart-push"
-			id="carousel">
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img
-						src="./Assets/Img/carrotCakeCarousel.jpg"
-						class="d-block w-100 img-responsive"
-						alt="..." />
-					<div class="carousel-caption">
-						<h4>Carrot Cake</h4>
-						<p>Some representative placeholder content for the first slide.</p>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<img
-						src="./Assets/Img/trufasCarousel.jpeg"
-						class="d-block w-100 img-responsive"
-						alt="..." />
-					<div class="carousel-caption">
-						<h4>Trufas</h4>
-						<p>Some representative placeholder content for the second slide.</p>
-					</div>
-				</div>
-				<div class="carousel-item">
-					<img
-						src="./Assets/Img/colaciones.jpg"
-						class="d-block w-100 img-responsive"
-						alt="" />
-					<div class="carousel-caption">
-						<h4>Third slide label</h4>
-						<p>Some representative placeholder content for the third slide.</p>
-					</div>
-				</div>
-			</div>
-			<button
-				class="carousel-control-prev"
-				type="button"
-				data-bs-target="#carousel"
-				data-bs-slide="prev">
-				<span
-					class="carousel-control-prev-icon"
-					aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button
-				class="carousel-control-next"
-				type="button"
-				data-bs-target="#carousel"
-				data-bs-slide="next">
-				<span
-					class="carousel-control-next-icon"
-					aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
-		</div>
-		<!--Carousel End-->
-		<!-- Feature-->
-
-		<div
-			class="row d-flex align-items-center align-items-stretch"
-			id="feature">
-			<div class="col-6 col-md-3 feature-icon p-3">
-				<p class="text-center">
-					<i class="fa-solid fa-seedling"></i>
-				</p>
-				<p class="description-text text-center">Productos veganos</p>
-			</div>
-			<div class="col-6 col-md-3 feature-icon p-3">
-				<p class="text-center">
-					<i class="fa-solid fa-plant-wilt"></i>
-				</p>
-				<p class="description-text text-center">Legumbres</p>
-			</div>
-			<div class="col-6 col-md-3 feature-icon p-3">
-				<p class="text-center">
-					<i class="fa-solid fa-bread-slice"></i>
-				</p>
-				<p class="description-text text-center">Harinas</p>
-			</div>
-			<div class="col-6 col-md-3 feature-icon p-3">
-				<p class="text-center">
-					<i class="fa-solid fa-seedling"></i>
-				</p>
-				<p class="description-text text-center">Elaboracion Propia</p>
-			</div>
-		</div>
-		<!-- Section h1 -->
-		<section id="productos">
-			<div
-				class="container d-flex justify-content-center"
-				id="products-title">
-				<p class="display-3 pt-0">Nuestros productos</p>
-			</div>
-			<!-- End Section h1 -->
-
-			<!-- Cards section-->
-			<div class="container cart-push pt-0">
-				<div class="row listProduct"></div>
-			</div>
-
-			<!--End cards section-->
-
-			<!--Medios de pago-->
-			<!-- 		<section class="bg-aquamarine d-none d-sm-none d-md-block">
-			<div class="container d-flex align-items-center p-5">
-				<div class="col-5">
-					<h2>Ahora aceptamos</h2>
-				</div>
-				<div class="col-7 d-flex justify-content-between">
-					<i class="fa fa-brands fa-cc-mastercard"></i>
-					<i class="fa fa-brands fa-cc-visa"></i>
-					<i class="fa fa-brands fa-cc-amex"></i>
-					<i class="fa fa-brands fa-cc-diners-club"></i>
-					<i class="fa fa-brands fa-cc-paypal"></i>
-					<i class="fa fa-brands fa-cc-discover"></i>
-				</div>
-			</div>
-		</section> -->
-			<!--End Medios de pago-->
-		</section>
-
-		<!--Carrito-->
-		<div class="cartTab">
-			<span id="cart-title">Carro de Compras</span>
-			<div class="listCart">
-				<!-- 				<div class="item">
-					<div class="image">
-						<img
-							src="./Assets/Img/colaciones.jpg"
-							alt="" />
-					</div>
-					<div class="name">NAME</div>
-					<div class="totalPrice">$5000</div>
-					<div class="quantity">
-						<span class="minus">< </span>
-						<span>1</span>
-						<span class="plus">></span>
-					</div>
-				</div> -->
-			</div>
-			<div class="container row">
-				<div class="col-3">Total</div>
-				<div class="col-1">$</div>
-				<div class="totalPrice col-8"></div>
-			</div>
-			<div class="btn">
-				<button class="close">Cerrar</button>
-				<button class="checkout">
-					<a
-						onclick="sendCart()"
-						class="checkout"
-						id="checkout">
-						Comprar</a
-					>
-				</button>
-			</div>
-		</div>
-		<!--Carrito End-->
-		<!--Back to top-->
-		<i
-			class="fa-solid fa-circle-up"
-			onclick="topFunction()"
-			id="backToTop"
-			title="Ir al inicio"></i>
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous" />
 		<script
 			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 			crossorigin="anonymous"></script>
-		<script src="./Assets/js/app.js"></script>
-		<!--back to top script-->
-		<script>
-			// Get the button:
-			let backToTop = document.getElementById("backToTop");
+		<link
+			href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap"
+			rel="stylesheet" />
 
-			// When the user scrolls down 20px from the top of the document, show the button
-			window.onscroll = function () {
-				scrollFunction();
-			};
+		<script
+			src="https://kit.fontawesome.com/4295f41cac.js"
+			crossorigin="anonymous"></script>
 
-			function scrollFunction() {
-				if (
-					document.body.scrollTop > 40 ||
-					document.documentElement.scrollTop > 40
-				) {
-					backToTop.style.display = "block";
-				} else {
-					backToTop.style.display = "none";
-				}
-			}
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet" />
 
-			// When the user clicks on the button, scroll to the top of the document
-			function topFunction() {
-				document.body.scrollTop = 0; // For Safari
-				document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-			}
-		</script>
-	</body>
-	<!--Footer-->
-	<footer
-		class="bg-aquamarine"
-		id="contacto">
-		<div class="container-fluid cart-push row p-2">
-			<div class="col-2"></div>
-			<div class="col-8 d-flex justify-content-center">
-				<h2>Siguenos</h2>
-				<a href="https://www.instagram.com/villa_perrito/ "
-					><i class="fa-brands fa-instagram"></i
-				></a>
+		<link
+			rel="stylesheet"
+			href="./Assets/Css/navbar.css" />
+		<!-- 		<link
+			rel="stylesheet"
+			href="./Assets/Css/style.css" /> -->
+		<title>Tienda Villa Perrito</title>
+	</head>
+	<body>
+		<nav class="sidebar close">
+			<header>
+				<div class="image-text">
+					<span class="image">
+						<img
+							src="./Assets/Img/logoperriro.jpg"
+							alt="" />
+					</span>
+					<div class="text logo-text">
+						<span class="name">Tienda Emporio</span>
+						<span class="profession">Villa Perito</span>
+					</div>
+				</div>
+				<i class="bx bx-chevron-right toggle-sidebar"></i>
+			</header>
+			<div class="menu-bar">
+				<div class="menu">
+					<li class="search-box">
+						<i class="bx bx-search icon"></i>
+						<input
+							type="text"
+							placeholder="Search..." />
+					</li>
+					<ul class="menu-links">
+						<li class="nav-link icon-cart">
+							<a href="#">
+								<i class="bx bx-cart icon"></i>
+								<span id="cart_items">0</span>
+								<span class="text nav-text">Carro </span>
+							</a>
+						</li>
+						<li class="nav-link">
+							<a href="#">
+								<i
+									class="bx bx-list-ul icon"
+									id="toggleButton"></i>
+								<span class="text nav-text">Cambiar Vista</span>
+							</a>
+						</li>
+						<li class="nav-link">
+							<a href="#">
+								<i class="bx bx-home-alt icon"></i>
+								<span class="text nav-text">Dashboard</span>
+							</a>
+						</li>
+						<li class="nav-link">
+							<a href="#">
+								<i class="bx bx-bar-chart-alt-2 icon"></i>
+								<span class="text nav-text">Revenue</span>
+							</a>
+						</li>
+						<li class="nav-link">
+							<a href="#">
+								<i class="bx bx-bell icon"></i>
+								<span class="text nav-text">Notifications</span>
+							</a>
+						</li>
+
+						<li class="nav-link">
+							<a href="#">
+								<i class="bx bx-heart icon"></i>
+								<span class="text nav-text">Likes</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="bottom-content">
+					<li class="">
+						<a href="#">
+							<i class="bx bx-log-out icon"></i>
+							<span class="text nav-text">Logout</span>
+						</a>
+					</li>
+					<li class="mode">
+						<div class="sun-moon">
+							<i class="bx bx-moon icon moon"></i>
+							<i class="bx bx-sun icon sun"></i>
+						</div>
+						<span class="mode-text text">Dark mode</span>
+						<div class="toggle-switch">
+							<span class="switch"></span>
+						</div>
+					</li>
+				</div>
 			</div>
-			<div class="col-2"></div>
-		</div>
-	</footer>
-	<!--End Footer-->
+		</nav>
+		<section class="home container-fluid">
+			<!-- Feature-->
+
+			<section id="feature">
+				<div class="feature-icon p-3">
+					<p class="text-center">
+						<i class="fa-solid fa-seedling"></i>
+					</p>
+					<p class="description-text text-center">Productos veganos</p>
+				</div>
+				<div class="feature-icon p-3">
+					<p class="text-center">
+						<i class="fa-solid fa-plant-wilt"></i>
+					</p>
+					<p class="description-text text-center">Legumbres</p>
+				</div>
+				<div class="feature-icon p-3">
+					<p class="text-center">
+						<i class="fa-solid fa-bread-slice"></i>
+					</p>
+					<p class="description-text text-center">Harinas</p>
+				</div>
+				<div class="feature-icon p-3">
+					<p class="text-center">
+						<i class="fa-solid fa-seedling"></i>
+					</p>
+					<p class="description-text text-center">Elaboracion Propia</p>
+				</div>
+			</section>
+			<!--Productos-->
+			<!-- Cards section-->
+			<div class="cart-push pt-0">
+				<div class="listProduct container card-style"></div>
+			</div>
+
+			<!--End cards section-->
+			<!--Carrito-->
+			<div class="cartTab">
+				<span id="cart-title">Carro de Compras</span>
+				<div class="listCart"></div>
+				<div class="container row">
+					<div class="col-3">Total</div>
+					<div class="col-1">$</div>
+					<div class="totalPrice col-8"></div>
+				</div>
+				<div class="btn">
+					<button class="closeCart">Cerrar</button>
+					<button class="checkout">
+						<a
+							onclick="sendCart()"
+							class="checkout"
+							id="checkout">
+							Comprar</a
+						>
+					</button>
+				</div>
+			</div>
+			<!--Carrito End-->
+			<!--Back to top-->
+			<i
+				class="fa-solid fa-circle-up"
+				onclick="topFunction()"
+				id="backToTop"
+				title="Ir al inicio"></i>
+			<!--Footer-->
+			<section
+				id="footer"
+				class="bg-aquamarine"
+				id="contacto">
+				<div class="cart-push rrss p-2">
+					<a href="https://www.instagram.com/villa_perrito/ "
+						><i class="fa-brands fa-instagram"></i
+					></a>
+				</div>
+			</section>
+		</section>
+		<script src="./Assets/js/app.js"></script>
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const toggleButton = document.getElementById("toggleButton");
+				const cardStyle = document.querySelector(".card-style");
+
+				const toggleView = () => {
+					cardStyle.classList.toggle("table-view");
+				};
+
+				// Function to check screen width and toggle view accordingly
+				const handleToggle = () => {
+					if (window.matchMedia("(min-width: 800px)").matches) {
+						toggleButton.addEventListener("click", toggleView);
+					} else {
+						toggleButton.removeEventListener("click", toggleView);
+						// Ensure the list-view class is removed on smaller screens
+						cardStyle.classList.remove("table-view");
+					}
+				};
+
+				// Initial check when the page loads
+				handleToggle();
+
+				// Listen for resize events and update accordingly
+				window.addEventListener("resize", handleToggle);
+			});
+		</script>
+
+		<!--Footer-->
+	</body>
 </html>
