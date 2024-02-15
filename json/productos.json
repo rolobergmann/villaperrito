@@ -5,7 +5,8 @@
 		"price": 9000,
 		"image": "../Assets/Img/carrotCakeCarousel.jpg",
 		"tipo": "dulce",
-		"descripcion": "Queque vegano hecho con zanahorias y nueces, cubierto de un delicioso frosting"
+		"descripcion": "Queque vegano hecho con zanahorias y nueces, cubierto de un delicioso frosting",
+		"especial": "<span class=\"lucide--vegan\" title=\"Vegano\"></span><span class=\"healthicons--lactose-free\" title=\"Sin Lactosa\"></span><span class=\"solar--chef-hat-heart-linear\" title=\"Elaboracion propia\"></span>"
 	},
 	{
 		"id": 2,
@@ -13,7 +14,8 @@
 		"price": 4500,
 		"image": "../Assets/Img/trufasCarousel.jpeg",
 		"tipo": "legumbre",
-		"descripcion": "Queque vegano hecho con zanahorias y nueces, cubierto con un delicioso frosting"
+		"descripcion": "Queque vegano hecho con zanahorias y nueces, cubierto con un delicioso frosting",
+		"especial": "<span class=\"lucide--vegan\" title=\"Vegano\"></span><span class=\"healthicons--lactose-free\" title=\"Sin Lactosa\"></span><span class=\"solar--chef-hat-heart-linear\" title=\"Elaboracion propia\"></span>"
 	},
 	{
 		"id": 3,
@@ -21,7 +23,8 @@
 		"price": 2000,
 		"image": "../Assets/Img/macEscoses.jpg",
 		"tipo": "dulce",
-		"descripcion": "Queque vegano hecho con zanahorias y nueces, cubierto con un delicioso frosting"
+		"descripcion": "Queque vegano hecho con zanahorias y nueces, cubierto con un delicioso frosting",
+		"especial": "<span class=\"lucide--vegan\" title=\"Vegano\"></span><span class=\"healthicons--gluten-free\" title=\"Sin Gluten\"></span><span class=\"healthicons--lactose-free\" title=\"Sin Lactosa\"></span><span class=\"solar--chef-hat-heart-linear\" title=\"Elaboracion propia\"></span>"
 	},
 	{
 		"id": 4,

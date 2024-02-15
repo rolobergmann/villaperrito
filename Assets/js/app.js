@@ -60,8 +60,12 @@ const addDataToHTML = () => {
 					<h5 class="card-title">${product.name}</h5>
 					<p class="card-text">
 						${product.descripcion}
+						
 					</p>
 				</div>
+				<ul class="list-group list-group-flush">
+					<li class="list-group-item product-icon"> ${product.especial} </li>
+				</ul>
 				<ul class="list-group list-group-flush">
 					<li class="list-group-item price">$${product.price}</li>
 				</ul>
@@ -142,9 +146,7 @@ const addCartToHTML = () => {
 			let info = products[positionProduct];
 			listCartHTML.appendChild(newItem);
 			newItem.innerHTML = `
-            <div class="image">
-                    <img src="${info.image}">
-                </div>
+
                 <div class="name">
                 ${info.name}
                 </div>
