@@ -25,7 +25,10 @@
 
 body {
 	min-height: 100vh;
-	background-color: var(--body-color);
+	background-image: url(../Img/veganTileSoy.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	overscroll-behavior-block: contain;
 	transition: var(--tran-05);
 }
 
@@ -58,7 +61,9 @@ body.dark {
 .sidebar.close {
 	width: 88px;
 }
-
+#nav-carro {
+	transform: translateX(-23px);
+}
 /* ===== Reusable code - Here ===== */
 .sidebar li {
 	height: 50px;
@@ -81,7 +86,7 @@ body.dark {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	font-size: 20px;
+	font-size: 25px;
 }
 
 .sidebar .text,
@@ -293,7 +298,7 @@ body.dark .switch::before {
 	left: 250px;
 	height: 100vh;
 	width: calc(100% - 250px);
-	background-color: var(--body-color);
+
 	transition: var(--tran-05);
 }
 .home .text {
@@ -328,6 +333,10 @@ body.dark .home .text {
 	font-size: small;
 	margin-bottom: 80px;
 }
+
+.view-toggle {
+	cursor: pointer;
+}
 /* Table View */
 .card-style.table-view {
 	display: table;
@@ -336,7 +345,7 @@ body.dark .home .text {
 
 .card-style.table-view .card {
 	display: table-row;
-	width: 100%;
+	/* width: 100%; */
 }
 
 .card-style.table-view .card > div {
@@ -350,7 +359,7 @@ body.dark .home .text {
 	object-fit: cover;
 }
 .card-style.table-view .card-img-top:hover {
-	transform: scale(1.2);
+	transform: scale(1.1);
 	object-fit: cover;
 }
 .card-style.table-view .product-icon {
@@ -359,21 +368,23 @@ body.dark .home .text {
 /* End Table View */
 
 .card {
-	width: 200px !important;
+	width: 300px !important;
 	height: 100%;
 	margin: 5px;
+	flex: 1 1 200px; /* Initially, each card occupies 200px width */
+	margin: 10px; /* Adjust margin as needed */
 }
 .card-body a {
 	text-decoration: none;
 	font-size: 8px;
 }
 .card-img-top {
-	width: 200px;
-	height: 100px;
+	width: 300px;
+	height: 150px;
 	object-fit: cover;
 }
 .card-img-top:hover {
-	transform: scale(1.2);
+	transform: scale(1.01);
 	object-fit: cover;
 }
 
@@ -450,7 +461,7 @@ i {
 	inset: 0 -450px 0 auto;
 	display: grid;
 	grid-template-rows: 70px 1fr 70px;
-	transition: 0.5s;
+	transition: var(--tran-05);
 	height: 700px;
 	opacity: 90%;
 	border-top-left-radius: 5%;
@@ -522,7 +533,7 @@ body.showCart .cart-push {
 	width: 0;
 }
 .container {
-	transition: 0.5s;
+	transition: var(--tran-05);
 }
 #carousel {
 	position: relative;
@@ -545,6 +556,7 @@ section .home .carousel-inner img {
 	justify-content: space-evenly;
 	flex-direction: row;
 	width: 100%;
+	transition: var(--tran-05);
 }
 .feature-icon {
 	color: white;
@@ -556,6 +568,10 @@ section .home .carousel-inner img {
 		height: 10rem;
 	}
 } */
+
+#our-story {
+	background-color: #707070;
+}
 
 #backToTop {
 	display: none; /* Hidden by default */
@@ -633,7 +649,7 @@ section .home .carousel-inner img {
 		display: grid;
 		grid-template-rows: 70px 1fr 70px;
 		transition: 0.5s;
-		height: 700px;
+		height: 600px;
 		opacity: 90%;
 		border-top-left-radius: 5%;
 		border-bottom-left-radius: 5%;

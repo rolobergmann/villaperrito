@@ -44,7 +44,9 @@
 		<link
 			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
 			rel="stylesheet" />
-
+		<link
+			href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+			rel="stylesheet" />
 		<link
 			rel="stylesheet"
 			href="./Assets/Css/navbar.css" />
@@ -61,7 +63,7 @@
 		<nav class="sidebar">
 			<header>
 				<div class="image-text">
-					<a href="./index.html">
+					<a href="/index.html">
 						<span class="image">
 							<img
 								src="./Assets/Img/logoperriro.jpg"
@@ -85,7 +87,7 @@
 					</li>
 					<ul class="menu-links">
 						<li class="nav-link">
-							<a href="./aboutUs.html">
+							<a href="/aboutUs.html">
 								<i class="bx bx-bookmark-heart icon"></i>
 								<span class="text nav-text">Sobre Nosotros</span>
 							</a>
@@ -99,14 +101,6 @@
 									id="nav-carro"
 									>Carro</span
 								>
-							</a>
-						</li>
-						<li
-							class="nav-link view-toggle"
-							id="toggleButton">
-							<a>
-								<i class="bx bx-list-ul icon"></i>
-								<span class="text nav-text">Cambiar Vista</span>
 							</a>
 						</li>
 						<li class="nav-link">
@@ -159,39 +153,70 @@
 		</nav>
 		<section class="home container-fluid p-0">
 			<!-- Feature-->
-
-			<section id="feature">
-				<div class="feature-icon p-3">
-					<p class="text-center">
-						<i class="fa-solid fa-seedling"></i>
-					</p>
-					<p class="description-text text-center">Productos veganos</p>
+			<header class="bg-dark text-white p-4 text-center">
+				<div class="container">
+					<h1 data-aos="fade-right">Meet Our Happy Vegan Animal Family</h1>
 				</div>
-				<div class="feature-icon p-3">
-					<p class="text-center">
-						<i class="fa-solid fa-plant-wilt"></i>
+			</header>
+			<section class="py-5">
+				<div
+					class="container text-center"
+					id="our-story">
+					<h2 data-aos="fade-up">Our Story</h2>
+					<p data-aos="fade-up">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
+						odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
 					</p>
-					<p class="description-text text-center">Legumbres</p>
-				</div>
-				<div class="feature-icon p-3">
-					<p class="text-center">
-						<i class="fa-solid fa-bread-slice"></i>
+					<p data-aos="fade-up">
+						Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+						Praesent mauris. Fusce nec tellus sed augue semper porta.
 					</p>
-					<p class="description-text text-center">Harinas</p>
-				</div>
-				<div class="feature-icon p-3">
-					<p class="text-center">
-						<i class="fa-solid fa-seedling"></i>
+					<p data-aos="fade-up">
+						Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent
+						taciti sociosqu ad litora torquent per conubia nostra, per inceptos
+						himenaeos.
 					</p>
-					<p class="description-text text-center">Elaboracion Propia</p>
 				</div>
 			</section>
-			<!--Productos-->
-			<!-- Cards section-->
-			<div class="cart-push pt-0">
-				<div class="listProduct container card-style"></div>
-			</div>
-
+			<section class="bg-light py-5">
+				<div class="container text-center">
+					<h2 data-aos="fade-up">Meet Our Team</h2>
+					<div class="row justify-content-center">
+						<div
+							class="col-md-4"
+							data-aos="fade-up">
+							<img
+								src="images/vegan_animal_1.png"
+								alt="Team Member"
+								class="img-fluid mb-4" />
+							<h5 class="mb-0">Vicky the Vegan Cow</h5>
+							<p class="mb-3">Chief Happiness Officer</p>
+						</div>
+						<div
+							class="col-md-4"
+							data-aos="fade-up"
+							data-aos-delay="100">
+							<img
+								src="images/vegan_animal_2.png"
+								alt="Team Member"
+								class="img-fluid mb-4" />
+							<h5 class="mb-0">Peter the Plant-Based Panda</h5>
+							<p class="mb-3">Lead Nutritionist</p>
+						</div>
+						<div
+							class="col-md-4"
+							data-aos="fade-up"
+							data-aos-delay="200">
+							<img
+								src="images/vegan_animal_3.png"
+								alt="Team Member"
+								class="img-fluid mb-4" />
+							<h5 class="mb-0">Lily the Leafy Llama</h5>
+							<p class="mb-3">Wellness Coach</p>
+						</div>
+					</div>
+				</div>
+			</section>
 			<!--End cards section-->
 			<!--Carrito-->
 			<div class="cartTab">
@@ -221,8 +246,24 @@
 				onclick="topFunction()"
 				id="backToTop"
 				title="Ir al inicio"></i>
+			<!--Footer-->
+			<!-- 			<section
+				id="footer"
+				class="bg-aquamarine"
+				id="contacto">
+				<div class="cart-push rrss p-2">
+					<a href="https://www.instagram.com/villa_perrito/ "
+						><i class="fa-brands fa-instagram"></i
+					></a>
+				</div>
+			</section> -->
 		</section>
-		<script src="./Assets/js/app.js"></script>
-		<script></script>
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script src="./Assets/js/appAbout.js"></script>
+		<script>
+			AOS.init();
+		</script>
+
+		<!--Footer-->
 	</body>
 </html>

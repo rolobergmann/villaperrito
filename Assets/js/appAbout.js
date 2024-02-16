@@ -227,47 +227,12 @@ document.addEventListener("DOMContentLoaded", function () {
 	});
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-	const toggleButton = document.getElementById("toggleButton");
-	const cardStyle = document.querySelector(".card-style");
-
-	const toggleView = () => {
-		cardStyle.classList.toggle("table-view");
-	};
-
-	// Function to check screen width and toggle view accordingly
-	const handleToggle = () => {
-		if (window.matchMedia("(min-width: 800px)").matches) {
-			toggleButton.addEventListener("click", toggleView);
-		} else {
-			toggleButton.removeEventListener("click", toggleView);
-			// Ensure the list-view class is removed on smaller screens
-			cardStyle.classList.remove("table-view");
-		}
-	};
-
-	// Initial check when the page loads
-	handleToggle();
-
-	// Listen for resize events and update accordingly
-	window.addEventListener("resize", handleToggle);
-});
-
-listProductHTML.addEventListener("click", (event) => {
-	let positionClick = event.target.closest(".addCart");
-	if (positionClick) {
-		let product_id = positionClick.closest(".item").dataset.id;
-		addToCart(product_id);
-	}
-});
-
 const initApp = () => {
 	// get data product
 	fetch("./json/productos.json")
 		.then((response) => response.json())
 		.then((data) => {
 			products = data;
-			addDataToHTML();
 
 			// get data cart from memory
 			if (localStorage.getItem("cart")) {
