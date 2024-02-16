@@ -53,6 +53,9 @@
 		<link
 			rel="stylesheet"
 			href="./Assets/Css/icons.css" />
+		<link
+			rel="stylesheet"
+			href="./Assets/Css/forms.css" />
 
 		<!-- 		<link
 			rel="stylesheet"
@@ -179,42 +182,50 @@
 				</div>
 			</section>
 			<section class="bg-light py-5">
-				<div class="container text-center">
-					<h2 data-aos="fade-up">Meet Our Team</h2>
-					<div class="row justify-content-center">
-						<div
-							class="col-md-4"
-							data-aos="fade-up">
-							<img
-								src="images/vegan_animal_1.png"
-								alt="Team Member"
-								class="img-fluid mb-4" />
-							<h5 class="mb-0">Vicky the Vegan Cow</h5>
-							<p class="mb-3">Chief Happiness Officer</p>
-						</div>
-						<div
-							class="col-md-4"
-							data-aos="fade-up"
-							data-aos-delay="100">
-							<img
-								src="images/vegan_animal_2.png"
-								alt="Team Member"
-								class="img-fluid mb-4" />
-							<h5 class="mb-0">Peter the Plant-Based Panda</h5>
-							<p class="mb-3">Lead Nutritionist</p>
-						</div>
-						<div
-							class="col-md-4"
-							data-aos="fade-up"
-							data-aos-delay="200">
-							<img
-								src="images/vegan_animal_3.png"
-								alt="Team Member"
-								class="img-fluid mb-4" />
-							<h5 class="mb-0">Lily the Leafy Llama</h5>
-							<p class="mb-3">Wellness Coach</p>
-						</div>
-					</div>
+				<!-- Formulario -->
+				<div class="container">
+					<h2>Add Product</h2>
+					<form id="productForm">
+						<label for="name">Name:</label>
+						<input
+							type="text"
+							id="name"
+							name="name"
+							required /><br /><br />
+						<label for="price">Price:</label>
+						<input
+							type="number"
+							id="price"
+							name="price"
+							required /><br /><br />
+						<label for="id_image">Image:</label>
+						<input
+							type="file"
+							name="images"
+							id="id_image"
+							accept="image/*" /><br /><br />
+						<label for="tipo">Type:</label>
+						<input
+							type="text"
+							id="tipo"
+							name="tipo"
+							required /><br /><br />
+						<label for="descripcion">Description:</label><br />
+						<textarea
+							id="descripcion"
+							name="descripcion"
+							rows="4"
+							cols="50"
+							required></textarea
+						><br /><br />
+						<label for="especial">Special:</label>
+						<input
+							type="text"
+							id="especial"
+							name="especial"
+							required /><br /><br />
+						<button type="submit">Add Product</button>
+					</form>
 				</div>
 			</section>
 			<!--End cards section-->
@@ -249,6 +260,7 @@
 		</section>
 		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 		<script src="./Assets/js/appAbout.js"></script>
+		<!-- <script src="./Assets/js/form.js"></script> -->
 		<script>
 			AOS.init();
 		</script>
