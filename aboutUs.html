@@ -49,15 +49,15 @@
 			rel="stylesheet" />
 		<link
 			rel="stylesheet"
-			href="./Assets/Css/navbar.css" />
+			href="./Assets/Css/style.css" />
 		<link
 			rel="stylesheet"
 			href="./Assets/Css/icons.css" />
-
-		<!-- 		<link
+		<link
 			rel="stylesheet"
-			href="./Assets/Css/style.css" /> -->
+			href="./Assets/Css/aboutUs.css" />
 		<title>Tienda Villa Perrito</title>
+		<script src="https://unpkg.com/scrollreveal"></script>
 	</head>
 	<body>
 		<nav class="sidebar">
@@ -153,70 +153,96 @@
 		</nav>
 		<section class="home container-fluid p-0">
 			<!-- Feature-->
-			<header class="bg-dark text-white p-4 text-center">
-				<div class="container">
-					<h1 data-aos="fade-right">Meet Our Happy Vegan Animal Family</h1>
-				</div>
-			</header>
-			<section class="py-5">
-				<div
-					class="container text-center"
-					id="our-story">
-					<h2 data-aos="fade-up">Our Story</h2>
-					<p data-aos="fade-up">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec
-						odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.
-					</p>
-					<p data-aos="fade-up">
-						Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
-						Praesent mauris. Fusce nec tellus sed augue semper porta.
-					</p>
-					<p data-aos="fade-up">
-						Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent
-						taciti sociosqu ad litora torquent per conubia nostra, per inceptos
-						himenaeos.
-					</p>
+			<section class="sec-01 about-section">
+				<div class="about-container container">
+					<h2 class="main-title">Sobre Nosotros</h2>
+					<div class="content">
+						<div class="image">
+							<img
+								src="./Assets/Img/aboutUs/IMG_8225.JPG"
+								alt="" />
+						</div>
+						<div class="text-box">
+							<h3>Lorem Ipsum</h3>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+								commodi?
+							</p>
+						</div>
+					</div>
+					<div class="media-icons">
+						<a
+							href="#"
+							class="icon"
+							><i class="fab fa-instagram"></i
+						></a>
+						<a
+							href="#"
+							class="icon"
+							><i class="fab fa-facebook"></i
+						></a>
+						<a
+							href="#"
+							class="icon"
+							><i class="fab fa-whatsapp"></i
+						></a>
+						<a
+							href="#"
+							class="icon"
+							><i class="fa-solid fa-envelope"></i
+						></a>
+					</div>
 				</div>
 			</section>
-			<section class="bg-light py-5">
-				<div class="container text-center">
-					<h2 data-aos="fade-up">Meet Our Team</h2>
-					<div class="row justify-content-center">
-						<div
-							class="col-md-4"
-							data-aos="fade-up">
+			<section class="sec-02 about-section">
+				<div class="container about-container">
+					<h3 class="section-title">Lorem Ipsum</h3>
+					<div class="content">
+						<div class="image">
 							<img
-								src="images/vegan_animal_1.png"
-								alt="Team Member"
-								class="img-fluid mb-4" />
-							<h5 class="mb-0">Vicky the Vegan Cow</h5>
-							<p class="mb-3">Chief Happiness Officer</p>
+								src="./Assets/Img/aboutUs/IMG_9353.jpeg"
+								alt="" />
 						</div>
-						<div
-							class="col-md-4"
-							data-aos="fade-up"
-							data-aos-delay="100">
-							<img
-								src="images/vegan_animal_2.png"
-								alt="Team Member"
-								class="img-fluid mb-4" />
-							<h5 class="mb-0">Peter the Plant-Based Panda</h5>
-							<p class="mb-3">Lead Nutritionist</p>
-						</div>
-						<div
-							class="col-md-4"
-							data-aos="fade-up"
-							data-aos-delay="200">
-							<img
-								src="images/vegan_animal_3.png"
-								alt="Team Member"
-								class="img-fluid mb-4" />
-							<h5 class="mb-0">Lily the Leafy Llama</h5>
-							<p class="mb-3">Wellness Coach</p>
+						<div class="info">
+							<h4 class="info-title">Description</h4>
+							<p>
+								Lorem ipsum dolor sit amet consectetur adipisicing elit.
+								Officia, dolorum!
+							</p>
 						</div>
 					</div>
 				</div>
 			</section>
+			<section class="sec-03 about-section">
+				<div class="container about-container">
+					<h3 class="section-title">Lorem Ipsum</h3>
+					<div class="content">
+						<div class="media-info">
+							<li>
+								<a href="#"><i class="fab fa-instagram"></i>Instagram</a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-facebook"></i>Facebook</a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-twitter"></i>X</a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-youtube"></i>Youtube</a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-tiktok"></i>TikTok</a>
+							</li>
+						</div>
+						<div class="image">
+							<img
+								src="./Assets/Img/aboutUs/IMG_7983.jpeg"
+								alt="" />
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<!--End cards section-->
 			<!--Carrito-->
 			<div class="cartTab">
@@ -241,16 +267,61 @@
 			</div>
 			<!--Carrito End-->
 			<!--Back to top-->
-			<i
-				class="fa-solid fa-circle-up"
-				onclick="topFunction()"
-				id="backToTop"
-				title="Ir al inicio"></i>
 		</section>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script src="./Assets/js/appAbout.js"></script>
 		<script>
-			AOS.init();
+			// Initialize ScrollReveal
+			const sr = ScrollReveal({
+				reset: false,
+				distance: "60px",
+				duration: 2500,
+				delay: 400,
+			});
+
+			// Define targets and options
+			sr.reveal(".main-title, .section-title", { delay: 500, origin: "left" });
+			sr.reveal(".section .image, .info", { delay: 600, origin: "bottom" });
+			sr.reveal(".text-box", { delay: 700, origin: "right" });
+			sr.reveal(".media-icons i", {
+				delay: 500,
+				origin: "bottom",
+				interval: 200,
+			});
+			sr.reveal(".sec-02 .image, .sec-03 .image", {
+				delay: 500,
+				origin: "top",
+			});
+			sr.reveal(".media-info li", {
+				delay: 500,
+				origin: "left",
+				interval: 200,
+			});
+
+			// Track revealed elements
+			const revealedElements = [];
+
+			// Define the callback function for the Intersection Observer
+			const callback = (entries, observer) => {
+				entries.forEach((entry) => {
+					if (entry.isIntersecting) {
+						// Check if the element is not already revealed
+						if (!revealedElements.includes(entry.target)) {
+							// Trigger ScrollReveal animation for the revealed element
+							sr.reveal(entry.target);
+							revealedElements.push(entry.target); // Track the revealed element
+						}
+					}
+				});
+			};
+
+			// Create a new Intersection Observer instance
+			const observer = new IntersectionObserver(callback, { threshold: 0.2 });
+
+			// Observe each element with the class 'section'
+			document.querySelectorAll(".section").forEach((section) => {
+				observer.observe(section);
+			});
 		</script>
+
+		<script src="./Assets/js/appAbout.js"></script>
 	</body>
 </html>

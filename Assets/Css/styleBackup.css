@@ -1,0 +1,295 @@
+body,
+html {
+	font-family: "open sans" sans-serif;
+	scroll-behavior: smooth;
+	height: 100%;
+}
+
+.navbar {
+	font-size: large;
+}
+.navbar,
+.navbar-brand,
+.navbar-nav > li {
+	z-index: 9;
+	color: white;
+}
+.navbar-nav > li {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.nav-link:visited,
+.nav-link:link {
+	border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover,
+.nav-link:active {
+	border-bottom: 2px solid #1bcfc6;
+	transform: translateY(-5px);
+}
+.navbar-expand-lg {
+	background-color: transparent !important;
+}
+@media only screen and (max-width: 800px) {
+	.logo_nav {
+		max-width: 50px;
+	}
+}
+#offcanvasNavbar {
+	background-color: #17a2b8;
+}
+
+.feature {
+	top: 0;
+}
+
+.btn-close-offcanvas {
+	padding-bottom: 5rem;
+}
+
+h1 {
+	font-size: 3rem;
+	color: #707070;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h5 {
+	font-weight: 700;
+}
+
+.list-group-item {
+	color: #373a3c;
+	font-size: 12px;
+}
+
+.card-body a {
+	text-decoration: none;
+	font-size: 12px;
+}
+.card-img-top:hover {
+	transform: scale(1.02);
+}
+
+.logo_nav {
+	width: 120px;
+}
+.navbar-toggler {
+	z-index: 9;
+}
+
+i {
+	/*font-size: 4rem;*/
+	font-size: 30px;
+}
+
+footer {
+	background-color: #e83e8c;
+}
+
+.suricata_footer {
+	width: 50px;
+}
+
+.icon-cart i {
+	position: relative;
+	color: white;
+	font-size: 30px;
+	text-align: right;
+	z-index: 9;
+}
+.icon-cart span {
+	display: flex;
+	width: 30px;
+	height: 30px;
+	background-color: #17a2b8;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	border-radius: 50%;
+	position: relative;
+	translate: 20px -25px;
+	cursor: pointer;
+	z-index: 9;
+}
+
+.listProduct .item .price {
+	letter-spacing: 3px;
+	font-size: small;
+}
+.listProduct .item button {
+	background-color: #17a2b8;
+	color: white;
+	padding: 5px 10px;
+	border-radius: 20px;
+	border: none;
+	cursor: pointer;
+}
+.cartTab {
+	width: 400px;
+	background-color: white;
+	color: #1bcfc6;
+	position: fixed;
+	inset: 0 -400px 0 auto;
+	display: grid;
+	grid-template-rows: 70px 1fr 70px;
+	transition: 0.5s;
+	height: 700px;
+	opacity: 90%;
+	border-top-left-radius: 5%;
+	border-bottom-left-radius: 5%;
+}
+
+body.showCart .cartTab {
+	inset: 0 0 0 auto;
+}
+
+body.showCart .cart-push {
+	transform: translateX(-250px);
+	opacity: 30%;
+}
+#cart-title {
+	padding: 15px;
+	margin: 0;
+	font-weight: 300;
+	font-size: x-large;
+	text-align: center;
+}
+.cartTab .btn {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+.cartTab .btn button {
+	background-color: #17a2b8;
+	border: none;
+	font-weight: 500;
+	color: white;
+	cursor: pointer;
+}
+.cartTab .btn .close {
+	background-color: #e83e8c;
+}
+
+.cartTab .listCart .item img {
+	width: 100%;
+}
+.cartTab .listCart .item {
+	display: grid;
+	grid-template-columns: 70px 150px 50px 1fr;
+	gap: 10px;
+	text-align: center;
+	align-items: center;
+}
+.listCart .quantity span {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-color: white;
+	color: black;
+	border-radius: 50%;
+	cursor: pointer;
+}
+.listCart .quantity span:nth-child(2) {
+	background-color: transparent;
+	color: white;
+}
+.listCart .item:nth-child(even) {
+	background-color: #707070;
+	color: white;
+}
+.listCart {
+	overflow: auto;
+}
+.listCart::-webkit-scrollbar {
+	width: 0;
+}
+.container {
+	transition: 0.5s;
+}
+#carousel {
+	position: relative;
+	width: 100%;
+	/* transform: translateY(-140px); */
+}
+section .home .carousel-inner img {
+	margin: auto;
+}
+
+@media screen and (max-height: 800px) {
+	.carousel .carousel-inner .carousel-captions {
+		height: 24rem !important;
+	}
+}
+.feature-icon {
+	background-color: #17a2b8;
+	color: white;
+	transform: translateY(-140px);
+	font-size: medium;
+}
+
+@media only screen and (max-width: 800px) {
+	#feature {
+		height: 10rem;
+	}
+}
+#products-title {
+	transform: translateY(-40px);
+}
+
+#backToTop {
+	display: none; /* Hidden by default */
+	position: fixed; /* Fixed/sticky position */
+	bottom: 10px; /* Place the button at the bottom of the page */
+	right: 10px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: #17a2b8; /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 15px; /* Some padding */
+	border-radius: 10px; /* Rounded corners */
+	font-size: 18px; /* Increase font size */
+	animation-name: back;
+	animation-duration: 4s;
+	animation-timing-function: ease-in-out;
+}
+
+#backToTop:hover {
+	background-color: #555; /* Add a dark-grey background on hover */
+}
+
+@keyframes back {
+	0% {
+		transform: translateY(5px);
+	}
+	25% {
+		transform: translateY(10px);
+	}
+	50% {
+		transform: translateY(10px);
+	}
+	75% {
+		transform: translateY(-15px);
+	}
+	100% {
+		transform: translateY(-5px);
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.listProduct {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+/* mobile */
+@media only screen and (max-width: 768px) {
+	.listProduct {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}

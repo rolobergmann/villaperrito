@@ -208,7 +208,7 @@ const checkCartEmpty = () => {
 
 document.addEventListener("DOMContentLoaded", function () {
 	const element = document.querySelector("nav"); // Replace ".your-element" with the selector for your target element
-	const mediaQuery = window.matchMedia("(max-width: 768px)"); // Define your media query
+	const mediaQuery = window.matchMedia("(max-width: 1450px)"); // Define your media query
 
 	const handleResponsiveClass = (mediaQuery) => {
 		if (mediaQuery.matches) {
